@@ -18,7 +18,7 @@ public class HomeServiceImpl implements HomeServices{
 	{
 		// Full path to your HelloWorld.java file
         String javaFileName = "Main.java";
-        String javaFilePath = "C:\\Users\\user\\Documents\\workspace-spring-tool-suite-4-4.20.0.RELEASE\\EasyToCrack\\src\\main\\Programs\\";
+        String javaFilePath = "src\\main\\Programs\\";				//C:\\Users\\user\\Documents\\workspace-spring-tool-suite-4-4.20.0.RELEASE\\EasyToCrack\\
         
         try {
         createDirectory(javaFilePath, javaFileName, sourceCode);
@@ -49,7 +49,7 @@ public class HomeServiceImpl implements HomeServices{
         run.waitFor(); // wait until process ends
         System.out.println("🟢 Program Output:\n");
         System.out.println(output.toString());
-        //clearDirectory(javaFilePath);
+        clearDirectory(javaFilePath);
         
         return output.toString();
         }

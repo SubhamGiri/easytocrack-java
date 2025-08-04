@@ -45,14 +45,7 @@ public class HomeController{
 		
 		System.out.println();
 		String sourceCode = code.get("code"); 
-//		sourceCode = """
-//	            public class TestCode {
-//	                public String greet() {
-//	                    return "Hello from dynamic Java!";
-//	                }
-//	            }
-//	        """;
-//		
+		
 		try {
 			String output = homeServices.runProgram(sourceCode);
 			
