@@ -12,7 +12,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("*") // or specify your frontend domain
+                        .allowedOrigins("https://easytocrack-java-production.up.railway.app/") // or specify your frontend domain
                         .allowedMethods("*")
                         .allowedHeaders("*");
             }
