@@ -15,7 +15,7 @@ public class HomeServiceImpl implements HomeServices {
     @Override
     public String runProgram(String sourceCode) throws IOException, InterruptedException {
         String javaFileName = "Main.java";
-        String javaFilePath = "src\\main\\Programs\\";
+        String javaFilePath = "src/main/Programs/";
 
         try {
             createDirectory(javaFilePath, javaFileName, sourceCode);
