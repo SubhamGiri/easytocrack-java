@@ -79,8 +79,9 @@ public class HomeServiceImpl implements HomeServices {
             return output.toString();
 
         } catch (Exception e) {
-            System.out.println("❌ Exception: " + e.getMessage());
-            return "❌ Exception occurred: " + e.toString();
+        	e.printStackTrace();
+            System.out.println("❌ Exception: " + e.getMessage());           
+            return "❌ Exception occurred: " + e.getMessage();
         }
     }
 
