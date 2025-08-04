@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.easytocrack.services.HomeServices;
 
-@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class HomeController{
 	
